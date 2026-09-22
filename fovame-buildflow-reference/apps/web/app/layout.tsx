@@ -1,0 +1,2 @@
+import './globals.css';
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><div className="shell"><aside className="side"><h2>FOVAME BuildFlow</h2><a href="/dashboard">Dashboard</a><a href="/projects">Projects</a><a href="/procurement/rfqs">RFQs</a><a href="/purchase-orders">Purchase Orders</a><a href="/deliveries">Deliveries</a><a href="/payments">Payments</a><a href="/approvals">Approvals</a><a href="/ai">AI Assistant</a><a href="/admin">Admin</a></aside><main className="main">{children}</main></div></body></html>}
