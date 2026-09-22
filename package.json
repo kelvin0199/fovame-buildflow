@@ -1,0 +1,13 @@
+{
+  "name": "fovame-buildflow",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev -w @buildflow/web",
+    "dev:api": "npm run start:dev -w @buildflow/api",
+    "test": "npm run test -w @buildflow/api",
+    "typecheck": "npm run typecheck -ws --if-present",
+    "db:generate": "npm run prisma:generate -w @buildflow/api",
+    "db:migrate": "npm run prisma:migrate -w @buildflow/api"
+  }
+}
